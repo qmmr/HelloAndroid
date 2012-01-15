@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, this is your master QMMR!</string>
+    <string name="test">This is text stored in strings.xml</string>
+    <string name="app_name">Hello, Android</string>
+    <string name="elipsisText">This is quite a long text, that when is not able to fit will be cut by elipsis</string>
+    <string name="linkWeb">http://qmmr.org</string>
+    <string name="linkEmail">bez.niczego@gmail.com</string>
+    <string name="spinnerPrompt">Choose your color:</string>
+
+    <color name="red">#FF0000</color>
+
+    <dimen name="textSize">12pt</dimen>
+
+   	<!-- colors for colors array -->
+   	<string name="spinnerColorsPrompt">Choose your favorite color:</string>
+    <string name="red">Red</string>
+    <string name="orange">Orange</string>
+    <string name="yellow">Yellow</string>
+    <string name="green">Green</string>
+    <string name="blue">Blue</string>
+    <string name="indigo">Indigo</string>
+    <string name="violet">Violet</string>
+    <string-array name="aColors">
+        <item>@string/red</item>
+        <item>@string/orange</item>
+        <item>@string/yellow</item>
+        <item>@string/green</item>
+        <item>@string/blue</item>
+        <item>@string/indigo</item>
+        <item>@string/violet</item>
+    </string-array>
+    
+</resources>

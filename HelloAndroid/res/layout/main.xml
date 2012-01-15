@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/hello"
+            android:textColor="@color/red"
+            android:textSize="@dimen/textSize"
+            android:textStyle="bold"
+            android:typeface="monospace" />
+
+        <TextView
+            android:id="@+id/test"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Test text hardcoded" />
+
+        <TextView
+            android:id="@+id/test2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/test" />
+
+        <TextView
+            android:id="@+id/elipsisText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:ems="12"
+            android:lines="2"
+            android:text="@string/elipsisText" />
+
+        <TextView
+            android:id="@+id/linkWeb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:text="@string/linkWeb" />
+
+        <TextView
+            android:id="@+id/linkEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="email"
+            android:text="@string/linkEmail" />
+
+        <TextView
+            android:id="@+id/linkEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="email"
+            android:linksClickable="false"
+            android:text="@string/linkEmail" />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="type here"
+            android:lines="4" />
+        <!-- android:editable="false" -->
+
+        <AutoCompleteTextView
+            android:id="@+id/AutoCompleteTextView01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:completionHint="Pick a color or type your own"
+            android:hint="AutoComplete after 2 letters" >
+
+            <requestFocus />
+        </AutoCompleteTextView>
+        <!-- android:completionThreshold="1" default value is 2 so hints are showed only after 2 chars have been entered -->
+
+        <MultiAutoCompleteTextView
+            android:id="@+id/multiAutoCompleteTextView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:completionHint="Multi words comma separated"
+            android:hint="MultiAutoCompleteTextView" />
+
+        <EditText
+            android:id="@+id/textFiltered"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="InputFilters: AllCaps and Length(2)" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/colors"
+            android:prompt="@string/spinnerPrompt" />
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="AutoCompleteTextView" >
+
+            <requestFocus />
+        </AutoCompleteTextView>
+
+        <MultiAutoCompleteTextView
+            android:id="@+id/multiAutoCompleteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="MultiAutoCompleteTextView" />
+
+        <EditText
+            android:id="@+id/textFiltered"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <DatePicker
+            android:id="@+id/datePicker1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TimePicker
+            android:id="@+id/timePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/displayDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ProgressBar
+            android:id="@+id/hProgressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:max="100" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="500" />
+
+        <TextView
+            android:id="@+id/seekText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="4"
+            android:stepSize="0.25" />
+
+        <TextView
+            android:id="@+id/rateText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Chronometer
+            android:id="@+id/chronometer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:format="Timer: %s"
+            android:text="Chronometer" />
+
+        <Button
+            android:id="@+id/longPress"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Long press me!"
+            android:text="Long press button" />
+
+        <TextView
+            android:id="@+id/tvFocus"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Registers focus changes"
+            android:text="Default text" />
+    </LinearLayout>
+
+</ScrollView>
